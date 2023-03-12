@@ -17,9 +17,5 @@ public class TestRectangle {
         // Test getArea() and getPerimeter
         System.out.println("Area is: " + shape.getArea());
         System.out.println("Perimeter is: " + shape.getPerimeter());
-        
-
-
     }
-    
 }

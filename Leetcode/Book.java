@@ -1,29 +1,34 @@
 package Leetcode;
 
 public class Book {
+    private String ISBN;
     private String name;
-    private Author author;
+    private Author author[];
     private double price;
-    private int qty;
+    private int qty = 0;
 
-    public Book (String name, Author author, double price){
+    public Book (String name, Author[] author, double price){
         this.name = name;
         this.author = author;
         this.price = price;
     }
 
-    public Book(String name, Author author, double price, int qty){
+    public Book(String name, Author[] author, double price, int qty){
         this.name = name;
         this.author = author;
         this.price = price;
         this.qty = qty;
     }
     
+    public String getISBN() {
+        return ISBN;
+    }
+
     public String getName(){
         return name;
     }
 
-    public Author getAuthor(){
+    public Author[] getAuthor(){
         return author;
     }
 
@@ -43,7 +48,11 @@ public class Book {
         this.qty = qty;
     }
 
+    public Author[] getAuthorName(){
+        return author;
+    }
+
     public String toString(){
-        return  "Book[name: " + name + ",[Author[Name: " + name + " Email: " + author.getEmail() + " Gemder: " + author.getGender() + "],"+ "Price: "+ "qty: " + qty;
+        return  "Book[name: " + name + ", authors = {[Author[Name: " + name + " Email: " + author.length + ","+ "Price: "+ "qty: " + qty;
     }
 }

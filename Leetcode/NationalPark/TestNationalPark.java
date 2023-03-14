@@ -3,7 +3,7 @@ package Leetcode.NationalPark;
 public class TestNationalPark {
     public static void main (String [] args){
         NationalPark nationalPK = new NationalPark();
-        nationalPK.setCampsite(new Campsite("Campsite 1", 0, 0));
+        nationalPK.setCampsite(new Campsite("Campsite 1", 0, 10));
         nationalPK.setCampsite(new Campsite("Campsite 2", 1, 5000));
         nationalPK.setCampsite(new Campsite("Campsite 3", 2, 5000));
         nationalPK.setRanger(new Rangers("Ranger Smith", "+35399988771", "35368978731"));
@@ -32,6 +32,22 @@ public class TestNationalPark {
                 System.out.println("Ranger Smith Home Phone Number: " + ranger.getHomePhone());
             }
         }
+
+        //  Whats the work phone number for Ranger smith
+        for(Rangers ranger : nationalPK.getRangers()){
+            if(ranger.getName().equals("Ranger Smith")){
+                System.out.println("Ranger Smith Work Phone Number: " + ranger.getWorkPhone());
+            }
+        }
+
+        // Exercise 2
+        nationalPK.setGuest(new Guest("Ranger Smith", "+35399988771"));
+        nationalPK.setGuest(new Guest("Ranger Smith", "+35399988771"));
+        nationalPK.setGuest(new Guest("Ranger Smith", "+35399988771"));
+
+    
+        //Which campsite is the most popular
+
 
     }
 }

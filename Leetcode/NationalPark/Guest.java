@@ -21,8 +21,4 @@ public class Guest {
     public void setGuest(String name, String phoneNumber) {
         guestList.put(name, phoneNumber);
     }
-
-
-    
- 
 }

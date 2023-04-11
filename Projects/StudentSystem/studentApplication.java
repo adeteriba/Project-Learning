@@ -1,4 +1,4 @@
-package Projects.StudentSystem;
+package Projects.studentSystem;
  import java.util.*;
 
 public class studentApplication {

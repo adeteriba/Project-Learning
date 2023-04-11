@@ -1,4 +1,4 @@
-package Projects.TicTacToe;
+package Projects.ticTacToe;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -15,8 +15,6 @@ public class javaSwingExample {
             f.setSize(400, 500);
             f.setLayout(null); // Using no layout managers
             f.setVisible(true); // Make frame Visible */
-
-
 
         // Java JButton Example with ActionListener
         JFrame f1 = new JFrame("Button Example");

@@ -9,7 +9,8 @@ import java.util.Arrays;
 public class TwoSum {
     public static void main(String [] args){
         int [] array = {2,7,11,15};
-        System.out.println(Arrays.toString(twoSums(array, 9)));
+        int[] result = twoSums(array, 9);
+        System.out.println(Arrays.toString(result));
     }
     /* */
     public static int [] twoSum(int[] nums, int target){

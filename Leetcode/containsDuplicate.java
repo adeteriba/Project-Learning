@@ -5,10 +5,10 @@ import java.util.*;
 public class containsDuplicate {
     public static void main(String [] args){
         int [] array = {1,2,3,1}; 
-        System.out.println(containsDuplicate(array));
+        System.out.println(containsDuplicates(array));
     }
 
-    public static boolean containsDuplicate(int[] nums){
+    public static boolean containDuplicate(int[] nums){
         for(int i =0;i<nums.length;i++){
             for(int j =i+1;j<nums.length;j++)
             if(nums[i] == nums[j]){
@@ -17,7 +17,6 @@ public class containsDuplicate {
         }
         return false;
     }
-    
 
     public static boolean containsDuplicates(int[] nums){
         Map <Integer, Integer> map = new HashMap<>();
